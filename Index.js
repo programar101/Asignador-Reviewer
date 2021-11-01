@@ -31,9 +31,10 @@ let personas = [
 
 let grupo = []; //array vacía para almacenar los nombres
 
+function asignar(){
+
 for (let i=0; i < personas.length; i++) {
     
-   
    
    
    
@@ -65,10 +66,35 @@ for (let i=0; i < personas.length; i++) {
     
         personas[num2].repeticiones += 1; 
 
-    grupo.push({'Reviewer': personas[i].nombre, 'p1': p1, 'p2': p2}); //pushea el objeto en GRUPO
+    grupo.push({'reviewer': personas[i].nombre, 'p1': p1, 'p2': p2}); //pushea el objeto en GRUPO
     
 
 };
+}
 
-console.log(grupo);
 
+const boton = document.getElementById("boton")
+let resultado = document.getElementById("resultado")
+
+
+boton.addEventListener("click", function(){
+
+document.getElementById("resultado").innerHTML="";
+   
+ asignar()
+
+ const reviewers = JSON.stringify(grupo)
+
+
+ document.getElementById("resultado").innerHTML = `
+    
+ <p>${reviewers}</p>
+
+
+ `
+})
+
+
+
+
+//console.log(grupo)
