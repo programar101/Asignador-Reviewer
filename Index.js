@@ -1,3 +1,4 @@
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min);    //numero random distinto al de scrimba
 };
