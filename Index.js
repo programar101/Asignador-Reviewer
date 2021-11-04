@@ -1,6 +1,7 @@
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min) + min);    //numero random distinto al de scrimba
+function getRandomInt() {
+    return  Math.floor( Math.random() * personas.length )    
+    
 };
 
 let personas = [
