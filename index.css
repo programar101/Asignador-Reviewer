@@ -1,3 +1,13 @@
+input{
+padding: 10px;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+display:flex;
+margin-bottom: 20px;
+margin-top:20px ;
+text-align: center;
+}
 
 button{
     border: none;
@@ -11,6 +21,8 @@ button{
     background: darkred;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
+    margin-top:20px ;
     display:flex;
     padding-left: 50px;
     padding-right: 50px;

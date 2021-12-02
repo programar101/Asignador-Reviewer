@@ -1,0 +1,11 @@
+{
+    "configurations": [
+    
+        {
+            "type": "pwa-node",
+            "name": "Node.js",
+            "request": "launch",
+            "program": "${workspaceFolder}\\Index.js"
+        }
+    ]
+}
